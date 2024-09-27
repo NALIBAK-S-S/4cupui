@@ -3,17 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Four Cups UI</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Origami 4-Cup UI</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="cup-container">
-    <div class="cup" id="cup1"></div>
-    <div class="cup" id="cup2"></div>
-    <div class="cup" id="cup3"></div>
-    <div class="cup" id="cup4"></div>
+  <div class="container">
+    <div class="origami-cup" onclick="toggleCup(this)">
+      <div class="cup-front">Cup 1</div>
+      <div class="cup-back">Content 1</div>
+    </div>
+    <div class="origami-cup" onclick="toggleCup(this)">
+      <div class="cup-front">Cup 2</div>
+      <div class="cup-back">Content 2</div>
+    </div>
+    <div class="origami-cup" onclick="toggleCup(this)">
+      <div class="cup-front">Cup 3</div>
+      <div class="cup-back">Content 3</div>
+    </div>
+    <div class="origami-cup" onclick="toggleCup(this)">
+      <div class="cup-front">Cup 4</div>
+      <div class="cup-back">Content 4</div>
+    </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
