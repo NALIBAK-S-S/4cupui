@@ -1,0 +1,50 @@
+/* Styling for the body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the cups */
+.cup-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Styling for each cup */
+.cup {
+  width: 80px;
+  height: 120px;
+  background-color: #ffa500;
+  border-radius: 0 0 40px 40px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Adding the handle to the cup */
+.cup::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  border: 10px solid #ffa500;
+  border-radius: 50%;
+  right: -30px;
+  top: 30px;
+  box-sizing: border-box;
+}
+
+/* Hover effect to change color */
+.cup:hover {
+  background-color: #ff4500;
+}
+
+/* Making the handle change color on hover */
+.cup:hover::before {
+  border-color: #ff4500;
+}
